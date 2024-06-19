@@ -1,0 +1,15 @@
+<!-- encoder/templates/encoder/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encode Message</title>
+</head>
+<body>
+    <h1>Encode Message</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Encode</button>
+    </form>
+</body>
+</html>
